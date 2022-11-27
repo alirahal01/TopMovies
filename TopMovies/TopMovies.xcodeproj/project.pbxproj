@@ -17,6 +17,7 @@
 		9FC5F2CE29338453007A062C /* TopMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2CD29338453007A062C /* TopMoviesUITests.swift */; };
 		9FC5F2D029338453007A062C /* TopMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2CF29338453007A062C /* TopMoviesUITestsLaunchTests.swift */; };
 		9FC5F2E02933A98A007A062C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2DF2933A98A007A062C /* HTTPMethod.swift */; };
+		9FC5F2E22933ADDD007A062C /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2E12933ADDD007A062C /* DataRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9FC5F2CD29338453007A062C /* TopMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesUITests.swift; sourceTree = "<group>"; };
 		9FC5F2CF29338453007A062C /* TopMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FC5F2DF2933A98A007A062C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9FC5F2E12933ADDD007A062C /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC5F2DF2933A98A007A062C /* HTTPMethod.swift */,
+				9FC5F2E12933ADDD007A062C /* DataRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC5F2B129338452007A062C /* ViewController.swift in Sources */,
+				9FC5F2E22933ADDD007A062C /* DataRequest.swift in Sources */,
 				9FC5F2AD29338452007A062C /* AppDelegate.swift in Sources */,
 				9FC5F2AF29338452007A062C /* SceneDelegate.swift in Sources */,
 				9FC5F2E02933A98A007A062C /* HTTPMethod.swift in Sources */,
