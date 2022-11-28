@@ -19,6 +19,8 @@
 		9FC5F2E02933A98A007A062C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2DF2933A98A007A062C /* HTTPMethod.swift */; };
 		9FC5F2E22933ADDD007A062C /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2E12933ADDD007A062C /* DataRequest.swift */; };
 		9FC5F2E42933C286007A062C /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2E32933C286007A062C /* ErrorResponse.swift */; };
+		9FC5F2E72933DD47007A062C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2E62933DD47007A062C /* NetworkService.swift */; };
+		9FC5F2EA2933E309007A062C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC5F2E92933E309007A062C /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9FC5F2DF2933A98A007A062C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		9FC5F2E12933ADDD007A062C /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		9FC5F2E32933C286007A062C /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		9FC5F2E62933DD47007A062C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9FC5F2E92933E309007A062C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +109,7 @@
 		9FC5F2AB29338452007A062C /* TopMovies */ = {
 			isa = PBXGroup;
 			children = (
-				9FC5F2E32933C286007A062C /* ErrorResponse.swift */,
-				9FC5F2DC29338483007A062C /* Services */,
+				9FC5F2DC29338483007A062C /* Network Service */,
 				9FC5F2AC29338452007A062C /* AppDelegate.swift */,
 				9FC5F2AE29338452007A062C /* SceneDelegate.swift */,
 				9FC5F2B029338452007A062C /* ViewController.swift */,
@@ -135,13 +138,24 @@
 			path = TopMoviesUITests;
 			sourceTree = "<group>";
 		};
-		9FC5F2DC29338483007A062C /* Services */ = {
+		9FC5F2DC29338483007A062C /* Network Service */ = {
 			isa = PBXGroup;
 			children = (
+				9FC5F2E82933DEE3007A062C /* Protocols */,
+				9FC5F2E32933C286007A062C /* ErrorResponse.swift */,
 				9FC5F2DF2933A98A007A062C /* HTTPMethod.swift */,
-				9FC5F2E12933ADDD007A062C /* DataRequest.swift */,
+				9FC5F2E92933E309007A062C /* NetworkService.swift */,
 			);
-			path = Services;
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		9FC5F2E82933DEE3007A062C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9FC5F2E12933ADDD007A062C /* DataRequest.swift */,
+				9FC5F2E62933DD47007A062C /* NetworkService.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +291,12 @@
 			files = (
 				9FC5F2B129338452007A062C /* ViewController.swift in Sources */,
 				9FC5F2E22933ADDD007A062C /* DataRequest.swift in Sources */,
+				9FC5F2EA2933E309007A062C /* NetworkService.swift in Sources */,
 				9FC5F2AD29338452007A062C /* AppDelegate.swift in Sources */,
 				9FC5F2E42933C286007A062C /* ErrorResponse.swift in Sources */,
 				9FC5F2AF29338452007A062C /* SceneDelegate.swift in Sources */,
 				9FC5F2E02933A98A007A062C /* HTTPMethod.swift in Sources */,
+				9FC5F2E72933DD47007A062C /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
