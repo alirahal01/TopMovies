@@ -11,6 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let request = PopularMovieRequest()
+        
+        NetworkService().request(request) { response in
+            switch response {
+            case .success(let movies):
+                print(movies)
+            case .failure(let error):
+                print(error)
+            }
+        }
         // Do any additional setup after loading the view.
     }
 
