@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PopularMovieListViewModel: AnyObject {
+protocol PopularMovieListContract: AnyObject {
     var movies: [Movie] { set get }
     var onFetchMovieSucceed: (() -> Void)? { set get }
     var onFetchMovieFailure: ((Error) -> Void)? { set get }

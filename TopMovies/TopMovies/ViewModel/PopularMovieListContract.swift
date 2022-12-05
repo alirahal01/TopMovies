@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class PopularMovieListDefaultViewModel: PopularMovieListViewModel {
+final class PopularMovieListViewModel: PopularMovieListContract {
     var movies: [Movie] = []
     
     var onFetchMovieSucceed: (() -> Void)?
@@ -20,9 +20,9 @@ final class PopularMovieListDefaultViewModel: PopularMovieListViewModel {
             switch result {
             case .success(let response):
                 self?.movies = response
-                print(response)
+                self?.onFetchMovieSucceed?()
             case .failure(let error):
-                print(error)
+                self?.onFetchMovieFailure?(error)
             }
         }
         
