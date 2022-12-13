@@ -74,7 +74,9 @@ final class PopularMovieCell: UITableViewCell {
         
         titleLabel.text = movie.title
         overviewLabel.text = movie.overview
-        //fetch image
+        ImageClient.shared.setImage(from: movie.posterURL, placeholderImage: nil) { [weak self] image in
+            self?.movieImageView.image = image
+        }
     }
 }
 
